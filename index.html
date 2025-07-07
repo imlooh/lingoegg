@@ -353,11 +353,12 @@
         }
 
         .englishDisplay, .characterEnglish, #feedEnglishDisplay, #englishDisplay, #flashcardAnswerSub, #targetEnglish {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             width: 90%;
             font-size: 0.65rem;
+            overflow-y: auto;
+            height: 50px;
+            scrollbar-width: thin; /* Firefox */
+            scrollbar-color: var(--screen-color) var(--screen-bg); /* Firefox */
         }
 
         .progress-indicator {
